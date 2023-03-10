@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp messenger</title>
+  </head>
+  <style media="screen">
+    input, button {
+      padding: 0.5rem 0.75rem;
+      color:darkgreen;
+      font-size:1rem;
+      margin:0.15rem;
+    }
+    button {
+      background-color: lightgreen;
+      border-style: solid;
+      border-color: darkgreen;
+      color:black;
+    }
+    div.box {
+      background-color: whitesmoke;
+      border-radius: 1rem;
+      border-color: darkgray;
+      padding:2rem;
+      width:auto;
+      margin:0 auto;
+      justify-content: center;
+    }
+    @media screen and (min-width:420px) {
+        div.box{
+          width:350px;
+        }
+        input,button {
+          margin:0.5rem;
+        }
+    }
+  </style>
+  <body>
+    <div class="box">
+      <h2>Whatsapp messenger</h2>
+      <p>Feed in the mobile number and submit</p>
+      <form class="" action="https://api.whatsapp.com/send" method="get">
+        <input type="number" name="phone" value="91" required>
+        <button type="button" name="button">Send</button>
+      </form>
+    </div>
+
+  </body>
+</html>
