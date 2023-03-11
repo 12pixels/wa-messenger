@@ -4,28 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatsApp messenger</title>
+    <link rel="shortcut icon" href="https://static.whatsapp.net/rsrc.php/v3/yz/r/ujTY9i_Jhs1.png" />
   </head>
   <style media="screen">
     body {
       background: url('tile-bg.png');
-      opacity: 0.88;
+      font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+      line-height: 1.4rem;
+      color:#111b21ad;
+    }
+    form {
+      padding-block:1rem;
     }
     input, button {
       padding: 0.5rem 0.75rem;
-      color:rgb(20,20,20);
       font-size:1rem;
-      margin:0.15rem;
-    }
-    button {
-      background-color: #75C030;
+      margin:0.15rem 0.15rem 0.15rem 0;
       border-style: none;
       border-radius: 0.25rem;
+    }
+    button {
+      background-color: #25d366;
     }
     div.box {
       background-color: whitesmoke;
       border-radius: 1rem;
-      border-color: darkgray;
-      padding:2rem;
+      padding:1.5rem;
       width:auto;
       margin:0 auto;
       justify-content: center;
@@ -35,18 +39,19 @@
           width:350px;
         }
         input,button {
-          margin:0.5rem;
+          margin:0.5rem 0.5rem 0.5rem 0;
         }
     }
   </style>
   <body>
     <div class="box">
       <h2>WhatsApp messenger</h2>
-      <p>Feed in the mobile number and submit. The mobile number is always prefixed with the country code</p>
       <form class="" action="https://api.whatsapp.com/send" method="get">
+        <label for="phone">Enter the mobile number</label>
         <input type="number" name="phone" value="91" required>
-        <button type="submit" name="button">Send</button>
+        <button type="submit" name="button">Message</button>
       </form>
+      <small>Prefix the mobile number with the country code</small>
     </div>
 
   </body>
