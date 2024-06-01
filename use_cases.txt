@@ -1,0 +1,14 @@
+
+Possible inputs for mobile number:
+
+-- positive cases --
++91<10 digit mobile number> ...strip out the prefix
+91<10 digit mobile number> ...strip out the prefix
+<10 digit mobile number> ...process it
+0<10 digit mobile number> ...strip out the prefix
+
+-- negative cases --
+<less than 10 digit mobile number> ...do not submit the form
+<alphanumeric value> ...do not submit the form
+<non-number> ...do not submit the form
+<empty> ...do not submit the form
